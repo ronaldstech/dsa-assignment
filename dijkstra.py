@@ -195,3 +195,28 @@ def dijkstra(graph, start, destination):
     path.reverse()
 
     return distances[destination], path
+
+    # 4. DISPLAY THE RESULTS
+
+def display_result(start, destination):
+
+    result = dijkstra(graph, start, destination)
+
+    if result is None:
+        return
+
+    distance, path = result
+
+    print("\nDIJKSTRA'S SHORTEST PATH")
+    print("-----------------------------")
+    print("Starting town:", start)
+    print("Destination:", destination)
+
+    print("Shortest route:")
+    print(" -> ".join(path))
+
+    print("Shortest distance:", distance, "km")
+
+
+if __name__ == "__main__":
+    display_result("Chitipa", "Blantyre")
