@@ -196,8 +196,7 @@ def dijkstra(graph, start, destination):
 
     return distances[destination], path
 
-    # 4. DISPLAY THE RESULTS
-
+# function for displaying the results
 def display_result(start, destination):
 
     result = dijkstra(graph, start, destination)
@@ -217,6 +216,6 @@ def display_result(start, destination):
 
     print("Shortest distance:", distance, "km")
 
-
+# calling the function
 if __name__ == "__main__":
     display_result("Chitipa", "Blantyre")
